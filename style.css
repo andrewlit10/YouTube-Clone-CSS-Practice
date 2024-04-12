@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 aside {
     display: flex;
     flex-direction: column;
@@ -107,7 +111,7 @@ main {
     background: #e5e5e5;
     cursor: pointer;
   }
- .right {
+.right {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,20 +119,20 @@ main {
     height: 100%;
  }
  
- .right i {
+.right i {
     min-width: 30px;
  }
 
- .active {
+.active {
     background: #e5e5e5;
  }
- hr {
+hr {
     height: 1px;
     background-color: #e5e5e5;
     border: none;
   }
 
-  .tags {
+.tags {
     display: flex;
     height: fit-content;
     padding: 10px 15px;
@@ -138,29 +142,29 @@ main {
     flex-wrap: wrap;
     
   }
-  .tag {
+.tag {
     
     height: fit-content;
     padding: 5px 15px;
     border-radius: 25px;
     border: 1px solid black;
   }
-  .dark {
+.dark {
     background-color: black;
     color: white;
   }
-  .light {
+.light {
     background-color: rgb(226, 226, 226);
   }
 .grid {
+  padding-right: 20px;
     background-color: rgb(231, 229, 229);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .video-container {
     font-weight: 700;
-    font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     max-width: 320px;
     display: flex;
     flex-direction: column;
@@ -171,14 +175,31 @@ main {
     display: flex;
     gap: 20px;
 }
+
 .video-info {
     display: flex;
-    
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;  
+}
+.video-text > * {
+  padding-bottom: 5px;
 }
 .video-info img {
-    height: fit-content;
-    padding: 10px;
+    width: 30px;
+    height: 30px;
 }
+.video-text {
+  min-width: 175px;
+}
+.video-text h3 {
+  font-size: 14px;
+}
+.do-some-coding {
+  font-size: 10px;
+  font-weight: 300;
+}
+
 @media (max-width: 768px) {
     .side-bar {
       display: none;
